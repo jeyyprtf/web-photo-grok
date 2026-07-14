@@ -11,13 +11,26 @@ Premium bilingual (ID/EN) portfolio site for photographer & filmmaker **Juan**, 
 - JWT session auth (jose) + bcrypt
 - Sharp image processing on upload
 
-## Getting started
+## Getting started (after clone)
+
+SQLite DB is **not** in git (by design). You must create tables + seed once:
 
 ```bash
+git clone https://github.com/jeyyprtf/web-photo-grok.git
+cd web-photo-grok
+cp .env.example .env   # optional — auto-created on first dev
 npm install
-npm run db:setup   # create DB + seed dummy content
+npm run db:setup       # creates prisma/dev.db + seed data
 npm run dev
 ```
+
+Atau satu perintah:
+
+```bash
+npm run setup && npm run dev
+```
+
+> `npm run dev` juga auto-menjalankan setup DB jika belum ada (tables + seed saat kosong).
 
 Open:
 
@@ -26,12 +39,25 @@ Open:
 
 ### Admin credentials (seed)
 
-| Field    | Value              |
-|----------|--------------------|
+| Field    | Value               |
+|----------|---------------------|
 | Email    | `admin@juan.studio` |
 | Password | `juanadmin123`      |
 
-Change these in `.env` before production.
+Change these in `.env` before production, then re-seed or update the user.
+
+## Fix: “The table `main.Media` does not exist”
+
+Artinya schema belum di-push ke SQLite. Jalankan:
+
+```bash
+npm run db:setup
+# atau
+npx prisma db push
+npx tsx prisma/seed.ts
+```
+
+Lalu restart `npm run dev`.
 
 ## Pages
 
@@ -45,7 +71,7 @@ Change these in `.env` before production.
 
 ## Environment
 
-Copy from `.env` (already created for local dev):
+Copy `.env.example` → `.env`:
 
 ```
 DATABASE_URL="file:./dev.db"
@@ -55,15 +81,19 @@ ADMIN_PASSWORD="juanadmin123"
 NEXT_PUBLIC_SITE_URL="http://localhost:3000"
 ```
 
+`DATABASE_URL` relative path is resolved from the `prisma/` directory → file at `prisma/dev.db`.
+
 ## Scripts
 
 | Command | Description |
 |---------|-------------|
-| `npm run dev` | Development server |
-| `npm run build` | Production build |
+| `npm run setup` | install + ensure DB + seed if empty |
+| `npm run dev` | ensure DB then start dev server |
+| `npm run build` | generate client, push schema, production build |
 | `npm run start` | Start production server |
-| `npm run db:setup` | Push schema + seed |
-| `npm run db:seed` | Re-seed data |
+| `npm run db:setup` | Push schema + seed if empty |
+| `npm run db:push` | Create/sync tables only |
+| `npm run db:seed` | Re-seed (wipes & recreates demo data) |
 | `npm run lint` | ESLint |
 
 ## Notes
