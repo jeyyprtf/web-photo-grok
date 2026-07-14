@@ -1,0 +1,81 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  name         String
+  passwordHash String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Category {
+  id        String  @id @default(cuid())
+  slug      String  @unique
+  nameId    String
+  nameEn    String
+  sortOrder Int     @default(0)
+  media     Media[]
+}
+
+model Media {
+  id            String   @id @default(cuid())
+  type          String   @default("photo") // photo | video
+  titleId       String
+  titleEn       String
+  descriptionId String   @default("")
+  descriptionEn String   @default("")
+  filePath      String
+  thumbPath     String?
+  categoryId    String?
+  category      Category? @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  featured      Boolean  @default(false)
+  sortOrder     Int      @default(0)
+  altId         String   @default("")
+  altEn         String   @default("")
+  client        String?
+  year          Int?
+  published     Boolean  @default(true)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model Package {
+  id            String  @id @default(cuid())
+  nameId        String
+  nameEn        String
+  descriptionId String
+  descriptionEn String
+  priceMin      Int
+  priceMax      Int
+  currency      String  @default("IDR")
+  featuresId    String  // JSON array string
+  featuresEn    String  // JSON array string
+  sortOrder     Int     @default(0)
+  active        Boolean @default(true)
+}
+
+model Inquiry {
+  id          String   @id @default(cuid())
+  name        String
+  email       String
+  phone       String?
+  projectType String?
+  date        String?
+  budget      String?
+  message     String
+  status      String   @default("new") // new | read | archived
+  createdAt   DateTime @default(now())
+}
+
+model SiteSetting {
+  key   String @id
+  value String
+}

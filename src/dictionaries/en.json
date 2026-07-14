@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "title": "JUAN — Photo & Videography",
+    "description": "Cinematic photography and videography by Juan. Portraits, weddings, fashion, and commercial storytelling crafted with precision.",
+    "keywords": "photographer, videographer, Juan, portrait, wedding, fashion, commercial, Indonesia"
+  },
+  "nav": {
+    "home": "Home",
+    "showcase": "Showcase",
+    "about": "About",
+    "contact": "Book",
+    "skip": "Skip to content"
+  },
+  "hero": {
+    "eyebrow": "Photo · Film · Direction",
+    "title": "Frames that feel like memory.",
+    "subtitle": "Cinematic photography & videography for people, brands, and moments that deserve to be remembered.",
+    "ctaPrimary": "View Showcase",
+    "ctaSecondary": "Book a Session",
+    "scroll": "Scroll"
+  },
+  "home": {
+    "selectedEyebrow": "Selected Works",
+    "selectedTitle": "Stories told in light",
+    "selectedCta": "View full showcase",
+    "servicesEyebrow": "Packages",
+    "servicesTitle": "Crafted for every chapter",
+    "servicesCta": "Discuss your project",
+    "aboutEyebrow": "About Juan",
+    "aboutTitle": "Quiet images. Loud emotion.",
+    "aboutBody": "I build visual worlds that feel intentional — from intimate portraits to full cinematic productions. Every frame is designed to age well.",
+    "aboutCta": "Read my story",
+    "testimonialsEyebrow": "Kind words",
+    "testimonialsTitle": "Trusted by couples, brands & creators",
+    "ctaTitle": "Let’s make something timeless.",
+    "ctaBody": "Whether it’s a private session or a full campaign — tell me your vision.",
+    "ctaButton": "Start a conversation"
+  },
+  "showcase": {
+    "eyebrow": "Showcase",
+    "title": "The gallery",
+    "subtitle": "A curated selection across portrait, wedding, fashion, commercial, landscape, and film.",
+    "all": "All",
+    "empty": "No works in this category yet.",
+    "featured": "Featured",
+    "close": "Close",
+    "client": "Client",
+    "year": "Year",
+    "category": "Category"
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "Juan",
+    "role": "Photographer & Filmmaker",
+    "lead": "I create images that breathe — deliberate composition, natural emotion, and cinematic restraint.",
+    "storyTitle": "The approach",
+    "storyP1": "My work sits between editorial discipline and human intimacy. I believe the strongest frames are quiet — they don’t shout, they stay.",
+    "storyP2": "From private portraits to wedding films and brand campaigns, every project begins with listening. Then light, movement, and timing do the rest.",
+    "philosophyTitle": "Philosophy",
+    "philosophy": [
+      "Light first, always",
+      "Emotion over perfection",
+      "Less noise, more presence",
+      "Craft that ages gracefully"
+    ],
+    "stats": {
+      "projects": "Projects",
+      "years": "Years",
+      "clients": "Clients",
+      "frames": "Frames delivered"
+    },
+    "gearTitle": "Tools of the craft",
+    "timelineTitle": "Path",
+    "cta": "Work with me"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Book a session",
+    "subtitle": "Share a little about your project. I’ll respond within 1–2 business days.",
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone / WhatsApp",
+      "projectType": "Project type",
+      "date": "Preferred date",
+      "budget": "Budget range",
+      "message": "Tell me about your vision",
+      "submit": "Send inquiry",
+      "sending": "Sending…",
+      "successTitle": "Message received.",
+      "successBody": "Thank you. I’ll get back to you shortly.",
+      "error": "Something went wrong. Please try again.",
+      "required": "Required"
+    },
+    "types": {
+      "portrait": "Portrait",
+      "wedding": "Wedding",
+      "fashion": "Fashion",
+      "commercial": "Commercial",
+      "video": "Video / Film",
+      "other": "Other"
+    },
+    "sideTitle": "Details",
+    "response": "Typical response",
+    "responseValue": "1–2 business days",
+    "location": "Based in",
+    "locationValue": "Jakarta · Available nationwide",
+    "emailLabel": "Email",
+    "packagesTitle": "Packages at a glance"
+  },
+  "packages": {
+    "from": "From",
+    "starting": "Starting range"
+  },
+  "footer": {
+    "tagline": "Cinematic photography & film by Juan.",
+    "rights": "All rights reserved.",
+    "admin": "Studio"
+  },
+  "common": {
+    "loading": "Loading…",
+    "back": "Back",
+    "view": "View",
+    "learnMore": "Learn more"
+  }
+}

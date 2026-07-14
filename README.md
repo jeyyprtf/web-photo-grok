@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# JUAN — Photo & Videography Portfolio
 
-## Getting Started
+Premium bilingual (ID/EN) portfolio site for photographer & filmmaker **Juan**, with a local admin panel to manage showcase media.
 
-First, run the development server:
+## Stack
+
+- Next.js 16 (App Router) + TypeScript
+- Tailwind CSS 4
+- Framer Motion + Lenis smooth scroll
+- Prisma + SQLite
+- JWT session auth (jose) + bcrypt
+- Sharp image processing on upload
+
+## Getting started
 
 ```bash
+npm install
+npm run db:setup   # create DB + seed dummy content
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Site: [http://localhost:3000](http://localhost:3000) → redirects to `/id`
+- Admin: [http://localhost:3000/admin](http://localhost:3000/admin)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Admin credentials (seed)
 
-## Learn More
+| Field    | Value              |
+|----------|--------------------|
+| Email    | `admin@juan.studio` |
+| Password | `juanadmin123`      |
 
-To learn more about Next.js, take a look at the following resources:
+Change these in `.env` before production.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Pages
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Route | Description |
+|-------|-------------|
+| `/id` · `/en` | Home — hero, selected works, packages, about teaser, testimonials, CTA |
+| `/[locale]/showcase` | Full gallery with category filters + lightbox |
+| `/[locale]/about` | Story, philosophy, stats, timeline, gear |
+| `/[locale]/contact` | Booking form + package overview |
+| `/admin` | Dashboard, media CRUD, categories, inquiries |
 
-## Deploy on Vercel
+## Environment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Copy from `.env` (already created for local dev):
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+DATABASE_URL="file:./dev.db"
+AUTH_SECRET="change-me"
+ADMIN_EMAIL="admin@juan.studio"
+ADMIN_PASSWORD="juanadmin123"
+NEXT_PUBLIC_SITE_URL="http://localhost:3000"
+```
+
+## Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Development server |
+| `npm run build` | Production build |
+| `npm run start` | Start production server |
+| `npm run db:setup` | Push schema + seed |
+| `npm run db:seed` | Re-seed data |
+| `npm run lint` | ESLint |
+
+## Notes
+
+- Uploaded media is stored in `public/uploads/` (gitignored).
+- Seed media uses Unsplash URLs so the gallery works without local files.
+- Contact form submissions are saved as inquiries in the database (view in admin).
+- Language preference is stored in the `NEXT_LOCALE` cookie.

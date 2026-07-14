@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "title": "JUAN — Foto & Videografi",
+    "description": "Fotografi dan videografi sinematik oleh Juan. Portrait, wedding, fashion, dan storytelling komersial yang dibuat dengan presisi.",
+    "keywords": "fotografer, videografer, Juan, portrait, wedding, fashion, commercial, Indonesia"
+  },
+  "nav": {
+    "home": "Beranda",
+    "showcase": "Showcase",
+    "about": "Tentang",
+    "contact": "Book",
+    "skip": "Lewati ke konten"
+  },
+  "hero": {
+    "eyebrow": "Foto · Film · Direction",
+    "title": "Bingkai yang terasa seperti kenangan.",
+    "subtitle": "Fotografi & videografi sinematik untuk orang, brand, dan momen yang pantas dikenang.",
+    "ctaPrimary": "Lihat Showcase",
+    "ctaSecondary": "Book Sesi",
+    "scroll": "Gulir"
+  },
+  "home": {
+    "selectedEyebrow": "Karya Pilihan",
+    "selectedTitle": "Cerita yang dituturkan lewat cahaya",
+    "selectedCta": "Lihat showcase lengkap",
+    "servicesEyebrow": "Paket",
+    "servicesTitle": "Dirancang untuk setiap babak",
+    "servicesCta": "Diskusikan proyekmu",
+    "aboutEyebrow": "Tentang Juan",
+    "aboutTitle": "Gambar yang tenang. Emosi yang kuat.",
+    "aboutBody": "Saya membangun dunia visual yang terasa disengaja — dari portrait intim hingga produksi sinematik penuh. Setiap frame dirancang agar tetap relevan seiring waktu.",
+    "aboutCta": "Baca cerita saya",
+    "testimonialsEyebrow": "Kata mereka",
+    "testimonialsTitle": "Dipercaya pasangan, brand & kreator",
+    "ctaTitle": "Mari ciptakan yang abadi.",
+    "ctaBody": "Baik sesi pribadi maupun kampanye penuh — ceritakan visimu.",
+    "ctaButton": "Mulai percakapan"
+  },
+  "showcase": {
+    "eyebrow": "Showcase",
+    "title": "Galeri",
+    "subtitle": "Kurasi karya lintas portrait, wedding, fashion, commercial, landscape, dan film.",
+    "all": "Semua",
+    "empty": "Belum ada karya di kategori ini.",
+    "featured": "Unggulan",
+    "close": "Tutup",
+    "client": "Klien",
+    "year": "Tahun",
+    "category": "Kategori"
+  },
+  "about": {
+    "eyebrow": "Tentang",
+    "title": "Juan",
+    "role": "Fotografer & Filmmaker",
+    "lead": "Saya menciptakan gambar yang bernapas — komposisi yang disengaja, emosi alami, dan ketahanan sinematik.",
+    "storyTitle": "Pendekatan",
+    "storyP1": "Karya saya berada di antara disiplin editorial dan kedekatan manusia. Saya percaya frame terkuat adalah yang tenang — tidak berteriak, tapi bertahan.",
+    "storyP2": "Dari portrait pribadi, film wedding, hingga kampanye brand, setiap proyek dimulai dengan mendengarkan. Lalu cahaya, gerak, dan timing menyelesaikan sisanya.",
+    "philosophyTitle": "Filosofi",
+    "philosophy": [
+      "Cahaya selalu diutamakan",
+      "Emosi di atas kesempurnaan",
+      "Lebih sedikit noise, lebih banyak kehadiran",
+      "Craft yang menua dengan anggun"
+    ],
+    "stats": {
+      "projects": "Proyek",
+      "years": "Tahun",
+      "clients": "Klien",
+      "frames": "Frame terkirim"
+    },
+    "gearTitle": "Peralatan",
+    "timelineTitle": "Perjalanan",
+    "cta": "Bekerja dengan saya"
+  },
+  "contact": {
+    "eyebrow": "Kontak",
+    "title": "Book sesi",
+    "subtitle": "Ceritakan sedikit tentang proyekmu. Saya akan membalas dalam 1–2 hari kerja.",
+    "form": {
+      "name": "Nama lengkap",
+      "email": "Email",
+      "phone": "Telepon / WhatsApp",
+      "projectType": "Jenis proyek",
+      "date": "Tanggal preferensi",
+      "budget": "Rentang budget",
+      "message": "Ceritakan visimu",
+      "submit": "Kirim inquiry",
+      "sending": "Mengirim…",
+      "successTitle": "Pesan diterima.",
+      "successBody": "Terima kasih. Saya akan segera menghubungi.",
+      "error": "Terjadi kesalahan. Silakan coba lagi.",
+      "required": "Wajib diisi"
+    },
+    "types": {
+      "portrait": "Portrait",
+      "wedding": "Wedding",
+      "fashion": "Fashion",
+      "commercial": "Commercial",
+      "video": "Video / Film",
+      "other": "Lainnya"
+    },
+    "sideTitle": "Detail",
+    "response": "Respons tipikal",
+    "responseValue": "1–2 hari kerja",
+    "location": "Berbasis di",
+    "locationValue": "Jakarta · Tersedia seluruh Indonesia",
+    "emailLabel": "Email",
+    "packagesTitle": "Paket sekilas"
+  },
+  "packages": {
+    "from": "Mulai",
+    "starting": "Rentang harga"
+  },
+  "footer": {
+    "tagline": "Fotografi & film sinematik oleh Juan.",
+    "rights": "Hak cipta dilindungi.",
+    "admin": "Studio"
+  },
+  "common": {
+    "loading": "Memuat…",
+    "back": "Kembali",
+    "view": "Lihat",
+    "learnMore": "Selengkapnya"
+  }
+}
